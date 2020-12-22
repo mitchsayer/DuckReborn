@@ -19,7 +19,7 @@ public class InteractGUN : MonoBehaviour
     {
         Hand.transform.rotation = new Quaternion(0, 0, 45, -45);
         Gun.transform.parent = HandPos.transform;
-        Gun.transform.localPosition = new Vector3(1, 0, 0);
+        Gun.transform.localPosition = new Vector3(0, 0, 0);
         Gun.transform.rotation = new Quaternion(0, 0, 0, 0);
         Gun.transform.localScale = new Vector3(1, 1, 1);
 
