@@ -85,5 +85,4 @@ public class DuckScript : MonoBehaviour
             return true;
         return false;
     }
-    
 }

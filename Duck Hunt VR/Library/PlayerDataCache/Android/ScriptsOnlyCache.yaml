@@ -1,22 +1,31 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraPointer
     - CountdownScript
     - DuckBelt
     - DuckScript
     - GunSHOOT
     - GvrEditorEmulator
     - GvrPointerInputModule
-    - GvrPointerPhysicsRaycaster
     - GvrReticlePointer
-    - InteractGUN
+    - ObjectController
     - Universe
+    Google.XR.Cardboard.dll:
+    - Google.XR.Cardboard.XRLoader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.XR.Management.Editor.dll:
+    - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    Unity.XR.Management.dll:
+    - UnityEngine.XR.Management.XRGeneralSettings
+    - UnityEngine.XR.Management.XRManagerSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -44,6 +53,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -53,37 +64,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 11812}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11922}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 12092}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 13306}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13334}
     - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 13384}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 13406}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13540}
+      Script: {instanceID: 13740}
+    - Class: 114
+      Script: {instanceID: 13770}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -227,6 +240,12 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
+      Hash: 04e4a8b0447477cc4e933d9e5311188f
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: ArmModel
+  - hash:
+      serializedVersion: 2
       Hash: f00ca901b734f71f99db8f25241154c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
@@ -285,6 +304,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRGeneralSettings
   - hash:
       serializedVersion: 2
       Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
@@ -449,6 +474,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 52bcb9c2a78bdd8d98a59e915c346e75
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: TransitionArmModel
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.Demos
@@ -485,6 +516,12 @@ ScriptsOnlyBuild:
     className: SwitchVideos
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.XR.Cardboard.dll
+    namespaceName: Google.XR.Cardboard
+    className: XRLoader
+  - hash:
+      serializedVersion: 2
       Hash: 11182ae33aeebaa701c6f03cb7f19976
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -501,6 +538,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: CarUserControl
+  - hash:
+      serializedVersion: 2
+      Hash: d251bf88db6c95a6b1aa0b69298da9ef
+    assemblyName: UnityEngine.SpatialTracking.dll
+    namespaceName: UnityEngine.SpatialTracking
+    className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
       Hash: db1f205a8c9dae1c39098cd23fc97f63
@@ -543,6 +586,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 063f3d8494a996a9ea6318928c4528bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Reticle
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -617,6 +666,12 @@ ScriptsOnlyBuild:
     className: LookatTarget
   - hash:
       serializedVersion: 2
+      Hash: bf3913f0d6c694bf20e1d681c79a4993
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleVR.Beta.Demos
+    className: DemoObjectController6DoF
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -662,6 +717,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: CardboardStartup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: ForcedReset
   - hash:
       serializedVersion: 2
@@ -669,6 +730,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Utility
     className: SmoothFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 10e5e5a6a80d1d5521d8e42ecdcff303
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleVR.Beta.Demos
+    className: DemoSeeThroughController
   - hash:
       serializedVersion: 2
       Hash: 14d684e5eb706041b258044f3a2d3861
@@ -699,6 +766,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
     className: MobileControlRig
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.XR.Cardboard.dll
+    namespaceName: Google.XR.Cardboard
+    className: XRSettings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -771,6 +844,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Effects
     className: FireLight
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraPointer
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
@@ -965,6 +1044,12 @@ ScriptsOnlyBuild:
     className: GvrRecenterOnlyController
   - hash:
       serializedVersion: 2
+      Hash: 24c74cc0d527a06113f2b967042769f0
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEditor.XR.LegacyInputHelpers
+    className: CameraOffset
+  - hash:
+      serializedVersion: 2
       Hash: 0aefaa69b3866ee3ae66f07ddb7f44ad
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.VideoDemo
@@ -1115,6 +1200,12 @@ ScriptsOnlyBuild:
     className: GerstnerDisplace
   - hash:
       serializedVersion: 2
+      Hash: 893dbdbfe611d62e230a686ea89f1efd
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: SwingArmModel
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1193,6 +1284,12 @@ ScriptsOnlyBuild:
     className: FPSCounter
   - hash:
       serializedVersion: 2
+      Hash: f60168e93f6956bf0479d187ed39cadc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjectController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1229,6 +1326,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: 8ab9295d94483c961936d82d233d3df2
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRManagerSettings
+  - hash:
+      serializedVersion: 2
       Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -1245,6 +1348,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Gvr.Internal
     className: EmulatorClientSocket
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VrModeController
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b

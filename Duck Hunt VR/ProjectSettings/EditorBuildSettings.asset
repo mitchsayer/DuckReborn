@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DuckHuntVR.unity
     guid: a43ad0186f2a6e346b18e2cf182ee902
+  - enabled: 0
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.4.1/Hello Cardboard/Scenes/HelloCardboard.unity
+    guid: 145a2a45d7bc746b19cb68410368bf96
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fd6394f4939792241bae807627e7fc2d,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 77b797c38b705a64fb29a2009dba645e,
       type: 2}
