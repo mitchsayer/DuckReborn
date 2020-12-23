@@ -20,11 +20,16 @@ public class DuckScript : MonoBehaviour
     public int m_ID { get; set; }
 
     private float GunForce = 100.0f;
+    public Material notShotMaterial;
+    public Material ShotMaterial;
+    private Renderer _myRenderer;
 
 
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        _myRenderer = GetComponentInChildren<Renderer>();
+        SetMaterial(false);
 
     }
 
@@ -36,6 +41,13 @@ public class DuckScript : MonoBehaviour
 
     }
 
+    private void SetMaterial(bool shotAt)
+    {
+        if (notShotMaterial != null && ShotMaterial != null)
+        {
+            _myRenderer.material = shotAt ? ShotMaterial : notShotMaterial;
+        }
+    }
     public void Move()
     {
         //Get the direction to the path point
@@ -45,6 +57,10 @@ public class DuckScript : MonoBehaviour
         //Move along the position at the speed * deltaTime
         transform.position += moveDir * speed * Time.deltaTime;
  
+    }
+    public void OnPointerClick()
+    {
+        SetMaterial(true);
     }
 
     public bool NeedsPathPoint()
@@ -67,8 +83,8 @@ public class DuckScript : MonoBehaviour
         if (l_rtn)
         {
             Universe.Instance.Score += (int)score;
-            HingeJoint hjCom = GetComponentInChildren<HingeJoint>();
-            hjCom.gameObject.transform.GetComponent<Rigidbody>().AddForce(-a_dir * GunForce);
+            //HingeJoint hjCom = GetComponentInChildren<HingeJoint>();
+            //hjCom.gameObject.transform.GetComponent<Rigidbody>().AddForce(-a_dir * GunForce);
             isDead = true;
         }
 

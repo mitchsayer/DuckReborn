@@ -53,8 +53,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -64,39 +62,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11362}
+    - Class: 114
       Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11370}
     - Class: 114
       Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11660}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 11922}
+      Script: {instanceID: 12090}
     - Class: 114
-      Script: {instanceID: 12092}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13306}
+      Script: {instanceID: 13332}
     - Class: 114
-      Script: {instanceID: 13334}
+      Script: {instanceID: 13382}
     - Class: 114
-      Script: {instanceID: 13384}
+      Script: {instanceID: 13404}
     - Class: 114
-      Script: {instanceID: 13406}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 13740}
-    - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -822,7 +820,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 978f26f4b8c0bc323090f3ed9c5e9db5
+      Hash: 66f1afb405d5f089035122f51fe5540b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DuckScript
